@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Detail</title>
+  </head>
+  <body>
+    <h1>{{post.title}}</h1>
+    <p>{{post.details}}</p>
+    <h2>{{post.author}}</h2>
+    <h3><a href="{% url 'update' post.id %}">Update</a></h3>
+
+  </body>
+</html>

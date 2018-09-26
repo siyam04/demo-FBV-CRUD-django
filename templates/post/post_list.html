@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All Posts</title>
+  </head>
+  <body>
+    {% for post in all_post %}
+        <h3>{{ post.id }}. <a href="{% url 'detail' post.id %}">{{post.title}}</a></h3>
+    {% endfor %}
+  </body>
+</html>
